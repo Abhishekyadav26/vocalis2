@@ -74,12 +74,7 @@ export function Navbar({ isAuthenticated = false, userProfile, showSystemStatus 
               </>
             ) : (
               <>
-                <Link href="/dashboard" className="text-gray-300 hover:text-white transition-colors">
-                  Dashboard
-                </Link>
-                <Link href="/dashboard?tab=history" className="text-gray-300 hover:text-white transition-colors">
-                  History
-                </Link>
+                
 
                 {/* System Status */}
                 {showSystemStatus && (
@@ -94,29 +89,43 @@ export function Navbar({ isAuthenticated = false, userProfile, showSystemStatus 
                 )}
 
                 {/* Notifications */}
-                <Button
+                {/* <Button
                   variant="outline"
                   size="sm"
                   className="bg-white/5 border-white/10 text-white hover:bg-white/10 rounded-full w-10 h-10 p-0 relative"
                 >
                   <Bell className="w-4 h-4" />
-                </Button>
+                </Button> */}
 
                 {/* User Profile */}
-                {userProfile && (
+                {/* {userProfile && (
                   <Card className="bg-white/5 border-white/10 backdrop-blur-md p-3 rounded-xl">
-                    {/* User profile content */}
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 flex items-center justify-center">
+                        <span className="text-white font-semibold text-sm">
+                          {userProfile.name.charAt(0).toUpperCase()}
+                        </span>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-white font-medium text-sm">{userProfile.name}</span>
+                        <div className="flex items-center space-x-2 text-xs text-gray-400">
+                          <span>Level {userProfile.level}</span>
+                          <span>•</span>
+                          <span>{userProfile.streak} day streak</span>
+                        </div>
+                      </div>
+                    </div>
                   </Card>
-                )}
+                )} */}
 
                 {/* Settings */}
-                <Button
+                {/* <Button
                   variant="outline"
                   size="sm"
                   className="bg-white/5 border-white/10 text-white hover:bg-white/10 rounded-full w-10 h-10 p-0"
                 >
                   <Settings className="w-4 h-4" />
-                </Button>
+                </Button> */}
 
                 {/* Logout */}
                 <Button

@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
@@ -298,11 +297,11 @@ export default function AuthPage() {
                 <h3 className="text-sm font-semibold text-white mb-3">What you'll get:</h3>
                 <ul className="space-y-2">
                   {[
-                    "Access to 10+ specialized AI models",
+                    "Complete DevOps workflow automation",
                     "Natural voice interaction",
-                    "Real-time processing and responses",
-                    "Secure data encryption",
-                    "24/7 customer support",
+                    "Real-time Git, Slack, and Notion sync",
+                    "Enterprise-grade security",
+                    "24/7 expert support",
                   ].map((feature, index) => (
                     <li key={index} className="flex items-center text-sm text-gray-300">
                       <CheckCircle className="w-4 h-4 text-emerald-400 mr-2" />
