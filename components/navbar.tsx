@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
+import { UserButton } from "@civic/auth/react";
 import {
   Brain,
   Bell,
@@ -63,14 +64,12 @@ export function Navbar({ isAuthenticated = false, userProfile, showSystemStatus 
                 <Link href="#about" className="text-gray-300 hover:text-white transition-colors">
                   About
                 </Link>
-                <Link href="/auth" className="text-gray-300 hover:text-white transition-colors">
-                  Sign In
+                <Link href="" className="text-gray-300 hover:text-white transition-colors">
+                  
                 </Link>
-                <Link href="/auth">
-                  <Button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white">
-                    Get Started
-                  </Button>
-                </Link>
+                  <div className="bg-gradient-to-r text-white">
+                    <UserButton />
+                  </div>
               </>
             ) : (
               <>
