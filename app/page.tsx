@@ -189,19 +189,7 @@ export default function LandingPage() {
         {/* Grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
 
-        {/* Floating Particles */}
-        {particles.map((particle, i) => (
-          <div
-            key={i}
-            className="absolute w-0.5 h-0.5 bg-violet-400/20 rounded-full animate-pulse"
-            style={{
-              left: particle.left,
-              top: particle.top,
-              animationDelay: particle.delay,
-              animationDuration: particle.duration,
-            }}
-          />
-        ))}
+        
 
         {/* Animated orbs */}
         <div className="absolute top-1/4 -left-4 w-72 h-72 bg-violet-600/5 rounded-full blur-3xl animate-pulse"></div>
