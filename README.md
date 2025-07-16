@@ -1,5 +1,8 @@
 # 🎤 Vocalis – Voice-Powered DevOps Automation
 
+<img width="1854" height="928" alt="Screenshot from 2025-07-17 00-53-29" src="https://github.com/user-attachments/assets/dab6370d-ddb5-4412-91ee-0ecc57b57096" />
+
+
 Vocalis is a next-generation platform that lets you control your entire DevOps and productivity workflow using just your voice. Designed for accessibility and speed, Vocalis connects your favorite tools—like GitHub, Notion, Slack, Jira, and more—so you can automate complex tasks, manage projects, and keep your team in sync, all hands-free.
 
 ---
